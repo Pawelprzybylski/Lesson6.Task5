@@ -1,5 +1,5 @@
 public class Main {
-    public static boolean verificationEvenNumber(int a) {
+    public static boolean isEvenNumber(int a) {
         return a % 2 == 0;
     }
 

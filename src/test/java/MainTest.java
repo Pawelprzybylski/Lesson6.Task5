@@ -2,20 +2,28 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MainTest {
-   @Test
+    @Test
+    public void shouldNumberIsEven() {
+        //give
+        int number = 10;
 
-    public void shouldNumberIsEven(){
-       //give
-       int number=10;
+        //when
+        boolean numberEven = Main.isEvenNumber(number);
 
-       //when
-       boolean numberEven= Main.verificationEvenNumber(number);
+        //then
+        Assert.assertEquals(true, numberEven);
 
-       //then
-       Assert.assertEquals(true,numberEven);
+    }
 
+    @Test
+    public void shouldNumberIsOdd() {
+        //give
+        int number = 9;
 
+        //when
+        boolean numberEven = Main.isEvenNumber(number);
 
-   }
-
+        //then
+        Assert.assertEquals(false, numberEven);
+    }
 }
