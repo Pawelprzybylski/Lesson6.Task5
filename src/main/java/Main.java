@@ -1,7 +1,12 @@
 public class Main {
-    public static boolean isEvenNumber(int a) {
-        return a % 2 == 0;
+
+    public static boolean isEven(int number) {
+        return number % 2 == 0;
     }
 
+    public static boolean isOdd(int number) {
+        return !isEven(number);
+    }
 
 }
+
